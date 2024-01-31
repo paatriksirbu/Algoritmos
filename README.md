@@ -18,4 +18,8 @@ Una vez ya tengamos el algoritmo completo, vamos a crear una clase Tarea donde d
 En el metodo main, creamos un array de tareas donde se van a crear tareas como lo hariamos normalmente con las tareas que tenemos que llevar a cabo a lo largo del dia o de la semana, aqui debemos asignar un nombre a la tarea y una prioridad, para asi, poder ordenarlas.
 Despues de crearlas, lo unico que queda es que el algoritmo QuickSort ordene las tareas en funcion de su prioridad de manera ascendente 1-5 y que se recorra el array con un foreach y nos muestre la lista de tareas ordenada.
 
+### Referencias
+
+Las referencias que he usado han sido la pagina de the-algorithms, los apuntes del campus, apuntes de Estructura de Datos del primer año y el libro Estructura de datos en Java de Luis Joyanes Aguilar.
+
 `Algoritmos` fue creado por <a>Patrik Paul Sirbu</a>.
