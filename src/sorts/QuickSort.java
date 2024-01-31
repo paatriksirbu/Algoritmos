@@ -6,7 +6,7 @@ import static sorts.SortUtils.*;
  * @author Podshivalov Nikita (https://github.com/nikitap492)
  * @see SortAlgorithm
  */
-class QuickSort implements SortAlgorithm {
+class QuickSort implements SortAlgorithm {      //Algoritmo obtenido de la pagina the-algorithms.
 
     /**
      * This method implements the Generic Quick Sort
@@ -75,20 +75,23 @@ class QuickSort implements SortAlgorithm {
         }
         return left;
     }
+    // Termina el algoritmo
 
+    //Creamos clase Tarea y los atributos nombre y prioridad que usaremos mas tarde.
     static class Tarea implements Comparable<Tarea>{
-        private String nombre;
+        private String nombre;      //definimos las variables
         private int prioridad;
 
-        public Tarea(String nombre, int prioridad) {
+        public Tarea(String nombre, int prioridad) {    //constructor de la clase y las inicializamos.
             this.nombre = nombre;
             this.prioridad = prioridad;
         }
-        public int compareTo(Tarea otraTarea){
+        public int compareTo(Tarea otraTarea){      //usamos el compareTo para determinar el orden para el orden del algoritmo.
             return Integer.compare(this.prioridad, otraTarea.prioridad);
         }
         @Override
-        public String toString() {
+        public String toString() {      //usamos un toString para representar una cadena, es decir, para describir el
+                                        //objeto que vamos a crear posteriormente.
             return "Tarea: " +
                     "Nombre: '" + nombre + '\'' +
                     ", Prioridad: " + prioridad;
@@ -96,9 +99,10 @@ class QuickSort implements SortAlgorithm {
         }
     }
     // Driver Program
-    public static void main(String[] args) {
+    public static void main(String[] args) {    //El main es obligatorio para que el programa pueda compilar y ver si nuestro
+                                                //algoritmo funciona correctamente.
 
-        Tarea[] tareas = new Tarea[]{
+        Tarea[] tareas = new Tarea[]{           //Creamos nuevas tareas para que nuestro algoritmo las ordene segun prioridad.
                 new Tarea("Pasear", 3),
                 new Tarea("Universidad", 1),
                 new Tarea("Revisar facturas", 2),
@@ -108,9 +112,9 @@ class QuickSort implements SortAlgorithm {
                 new Tarea("Recoger habitacion", 1),
         };
 
-        new QuickSort().sort(tareas);
+        new QuickSort().sort(tareas);       //Aqui el algoritmo es donde realiza su funcion y nos ordena las tareas por prioridad
 
-        for (Tarea tarea: tareas){
+        for (Tarea tarea: tareas){      //usamos un foreach para recorrer el array entero y que nos muestre las tareas ya ordenadas.
             System.out.println(tarea);
         }
 

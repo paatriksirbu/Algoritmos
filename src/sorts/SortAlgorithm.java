@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public interface SortAlgorithm {
+public interface SortAlgorithm {        //Interfaz de la web the-algorithms.
 
 
     <T extends Comparable<T>> T[] sort(T[] unsorted);

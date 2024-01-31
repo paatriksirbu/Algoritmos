@@ -8,7 +8,8 @@ import java.util.List;
  *
  * @author Podshivalov Nikita (https://github.com/nikitap492)
  */
-final class SortUtils {
+final class SortUtils {     //Clase con metodos que vamos a usar para el algoritmo.
+                            //Obtenidos de la web the-algorithms
 
     /**
      * Helper method for swapping places in array
